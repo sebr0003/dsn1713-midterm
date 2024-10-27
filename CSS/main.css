@@ -2,9 +2,19 @@
 
 /* Set custom variables here */
 
+:root {
+  --bs-body-bg: #F6F3ED; 
+  --bg-primary: #2e483a;
+  --navbar-font-color: #A1ACA6;
+  --bs-light: #f6f3ed;
 
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
 
-
+.navbar {
+  background-color: var(--bg-primary);
+}
 
 .navbar-brand {
   color: #F6F3ED;
@@ -20,16 +30,84 @@ h1, h2, h3 {
 
 #hero {
   height: 800px;
-  background-color: #E4E6DB;
+  background-color: var(--bs-body-bg);
   background-image: url(../images/hero-bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+#hero h1 {
+  font-size: 1.953rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  max-width: 750px;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--bg-primary);
+  color: var(--bs-light);
+}
+
+.btn:hover {
+  background-color: var(--bs-light);
+  color: var(--bg-primary);
+
+}
+
 #hero .d-flex {
   height: 800px;
 }
+
+#hero p{
+  font-size: 1rem;
+  text-align:center;
+  padding-top: 0.5rem;
+  max-width: 700px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+#intro p{
+  max-width: 750px;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+#eat-healthy {
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+}
+
+#eat-healthy h3 {
+  font-size: 1.5rem;
+}
+
+#eat-healthy p {
+  font-size: small;
+  word-wrap: break-word;
+}
+
+#quotes {
+  background-color: var(--bg-primary);
+  color: var(--bs-light);
+}
+
+.blockquote-footer{
+  color: var(--bs-light);
+}
+
+.accordion {
+width: 65%;
+margin: 0 auto;
+}
+
 
 #cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
@@ -42,8 +120,42 @@ h1, h2, h3 {
   height: 400px;
 }
 
+#cta h2 {
+  color: var(--bs-light);
+  font-size: 1.5rem;
+}
+
+#cta .cta-button {
+background-color: var(--bg-primary);
+color: var(--bs-light);
+}
+
 section:not(#hero):not(#cta){
   padding: 60px 0;
+}
+
+.footer {
+  background-color: var(--bg-primary);
+  padding: 30px;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.text-brand {
+  color: var(--bs-light);
+  font-size: small;
+}
+
+.img-icon {
+  width: 20px;
+  height: auto;
+}
+
+.social-icon {
+  width: 20px;
+  height: auto;
 }
 
 @media(min-width: 993px){
